@@ -5,11 +5,11 @@
 class Sawsy < Formula
   desc ""
   homepage "https://github.com/danielcmessias/sawsy"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.2/sawsy_0.0.2_darwin_all.tar.gz"
-    sha256 "73144234cb30eab1f638146f160f1426ba5dd557cc0d517fca45386d82fd585e"
+    url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.3/sawsy_0.0.3_darwin_all.tar.gz"
+    sha256 "003addd27d06b334aea8f07a64fcd6ea2f3c3da9a5025a3749575049235d0d4e"
 
     def install
       bin.install "sawsy"
@@ -18,16 +18,16 @@ class Sawsy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.2/sawsy_0.0.2_linux_arm64.tar.gz"
-      sha256 "6b5639c4b3cc23daa5559ec142edb1f2f12fe4804b6df099c90db6253849f616"
+      url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.3/sawsy_0.0.3_linux_arm64.tar.gz"
+      sha256 "f450bb3665e70b498d1b217bf0d02af99286072e801c04d265e68608e542f0b0"
 
       def install
         bin.install "sawsy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.2/sawsy_0.0.2_linux_amd64.tar.gz"
-      sha256 "be813b6cb6d64d83309d9ae98180ca03b60bf034d2827be18e5c8b7cadc061c4"
+      url "https://github.com/danielcmessias/sawsy/releases/download/v0.0.3/sawsy_0.0.3_linux_amd64.tar.gz"
+      sha256 "5c61ba1e9c23338bbfcf412b6e542f73adf677521777649ad5c8d61a293db5b3"
 
       def install
         bin.install "sawsy"
